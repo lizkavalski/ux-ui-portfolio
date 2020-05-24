@@ -1,0 +1,31 @@
+body{
+  display: flexbox;
+}
+
+#heading-pic{
+  background-image: url("../assets/hiking.jpg");
+  filter: blur(3px);
+    /* -webkit-filter: blur(4em); */
+  height: 15em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#heading-txt{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-size: 2em;
+  border: .15em groove #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(6em, -6em);
+  z-index: 4;
+  width: 80%;
+  padding: 20px;
+}
+strong{
+  font-weight: bold;
+  color: azure;
+}
