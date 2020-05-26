@@ -1,18 +1,31 @@
 body{
   display: flex;
   flex-direction: column;
-}
-header{ 
-  background: lime;
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  background-image:url(https://www.publicdomainpictures.net/pictures/330000/velka/green-linesstripes-background-1586946264hQz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 nav ul{ 
+  background: rgb(248, 248, 248);
+  box-shadow:2em #cccccc;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
   display: flex;
-  justify-content: space-around;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  /* padding-left: 6em;
+  padding-right:5em ; */
+  padding: .5em 6em .5em 5em;
+}
+nav h2{
+  margin-right: 30em;
+}
+ul li { 
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  border-left:darkcyan solid .01em ;
 }
 nav a{
   text-decoration: none;
@@ -23,7 +36,7 @@ nav a{
   background-image: url("../assets/hiking.jpg");
   filter: blur(3px);
   /* -webkit-filter: blur(4em); */
-  height: 15em;
+  height: 20em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +47,7 @@ nav a{
   color: white;
   font-size: 2em;
   font-family: 'Chelsea Market', cursive;
-  border: .15em groove #f1f1f1;
+  /* border: .15em groove #f1f1f1; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,10 +58,25 @@ nav a{
 }
 strong{
   font-family: 'Homemade Apple', cursive;
-  color: rgb(255, 131, 245);
+  color: #3bff38;
 }
-
-.info{
-  width: 75%;
+#about{
+  width: 85em;
   margin:auto;
+  background-color: rgba(0, 0, 0, 0.50); 
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  align-content: flex-start
+}
+#about p{ 
+  font-family: 'Poppins', sans-serif;
+  color: rgb(226, 253, 253);
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 1em 1.5em 1em 1.5em;
+}
+#profile{
+  width: 25em;
+  margin: 2em 0em 1.5em 1em;;
 }
