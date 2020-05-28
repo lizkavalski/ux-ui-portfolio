@@ -1,4 +1,4 @@
-@media screen and (min-width: 1840px)and (orientation: landscape){
+@media screen and (min-width: 970px)and (orientation: landscape){
   body{
     display: flex;
     flex-direction: column;
@@ -11,10 +11,10 @@
     font-family: 'Pacifico', cursive;
     font-size: 2em;
     display: flex;
-    flex-flow:row nowrap;
     justify-content: space-between;
     padding: .5em 6em .5em 5em;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed; 
+    /*Set the navbar to fixed position */
     top: 0;
     width: 50em;
   }
@@ -24,6 +24,7 @@
   nav ul li { 
     display: flex;
     flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
     border-left:darkcyan solid .01em ;
   }
   nav a{
@@ -81,27 +82,29 @@
   
   }
   #about{
-    width: 85em;
+    width: 75%;
     margin:auto;
     background-color: rgba(0, 0, 0, 0.50); 
     display: flex;
     align-items:center;
+    flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
   }
-  #about p{ 
+  #about p { 
     font-family: 'Poppins', sans-serif;
     color: rgb(226, 253, 253);
     font-size: 1.5em;
     line-height: 1.5em;
     padding: 4.5em 1.5em 4.5em 1.5em;
     display: flex;
-    align-items:center;
-    justify-content: center;
+    align-items:flex-start;
+    justify-content: flex-start;
     align-content: center;
   }
   #profile{
     width: 25em;
-    margin: 2em 0em 1.5em 1em;;
+    filter: saturate(1.5) contrast(100%);
+    margin: 2em 0em 1.5em 1em;
   }
 }
