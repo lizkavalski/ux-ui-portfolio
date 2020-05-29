@@ -106,5 +106,6 @@
     width: 25em;
     filter: saturate(1.5) contrast(100%);
     margin: 2em 0em 1.5em 1em;
+    border-radius: 15em;
   }
 }
