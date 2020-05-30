@@ -50,6 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
  #heading-pic p{
     background-color: rgba(0,0,0, 0.4);
@@ -59,6 +60,26 @@
   strong{
     font-family: 'Homemade Apple', cursive;
     color: #3bff38;
+  }
+  a.button{
+    background-image: radial-gradient(#3bff38 10%, hotpink 90%);
+    font-family: 'Chelsea Market', cursive;
+    color:#0a0a0a;
+    border-radius: .5em;
+    line-height: 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    padding:.5em;
+    align-items: center;
+    justify-content: center;
+  }
+  a.button:hover{
+    background-color: #3bff38;
+    line-height: 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
   }
   footer {
     background-color: rgb(248, 248, 248);
@@ -107,5 +128,9 @@
     filter: saturate(1.5) contrast(100%);
     margin: 2em 0em 1.5em 1em;
     border-radius: 15em;
+  }
+  #about h2{
+    background-color: hotpink;
+    font-family: 'Homemade Apple', cursive;
   }
 }
