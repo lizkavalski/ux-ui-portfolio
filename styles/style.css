@@ -20,11 +20,13 @@
     width: 50em;
   }
   nav h2{
-    margin-right: 30em;
-  }
-  nav ul li { 
     display: flex;
-    flex-flow: row-reverse nowrap;
+    padding-right: 30em;
+  }
+  .nav-list { 
+    display: flex;
+    flex-flow: row nowrap;
+    flex-shrink: 6;
     justify-content: flex-end;
     border-left:darkcyan solid .01em ;
   }
@@ -34,7 +36,7 @@
   }
 
   .info{
-    margin: 0em 0em 0em 0em;
+    margin: 4em 0em 0em 0em;
   }
   #heading-pic{
     background-image: url("../assets/hiking-blur.png");
@@ -142,5 +144,22 @@
     filter: saturate(1.5) contrast(100%);
     margin: 2em 0em 1.5em 1em;
     border-radius: 15em;
+  }
+  #about h2{
+    background-color: hotpink;
+    font-family: 'Homemade Apple', cursive;
+  }
+  #infoprofilio{
+    color: seashell;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    width: 75%;
+    margin:auto;
+    background-color: rgba(0, 0, 0, 0.50); 
+    display: flex;
+    align-items:center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
   }
 }
