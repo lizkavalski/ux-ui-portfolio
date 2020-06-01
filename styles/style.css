@@ -15,6 +15,7 @@
     padding: .5em 6em .5em 5em;
     position: fixed; 
     /*Set the navbar to fixed position */
+    z-index: 2;
     top: 0;
     width: 50em;
   }
@@ -33,6 +34,7 @@
     text-decoration: none;
     color:black
   }
+
   .info{
     margin: 4em 0em 0em 0em;
   }
@@ -63,8 +65,8 @@
     font-family: 'Homemade Apple', cursive;
     color: #3bff38;
   }
-  a.button{
-    background-image: radial-gradient(#3bff38 10%, hotpink 90%);
+  .button1{
+    background-image: radial-gradient(#4dd6bf 10%, #328f7f 90%); 
     font-family: 'Chelsea Market', cursive;
     color:#0a0a0a;
     border-radius: .5em;
@@ -75,13 +77,21 @@
     align-items: center;
     justify-content: center;
   }
-  a.button:hover{
-    background-color: #3bff38;
-    line-height: 1.5em;
-    font-size: 1em;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
+  .button1:hover{
+    background-image: radial-gradient( #328f7f 10%, #4dd6bf 90%); 
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+ 
   }
   footer {
     background-color: rgb(248, 248, 248);
@@ -110,9 +120,13 @@
     background-color: rgba(0, 0, 0, 0.50); 
     display: flex;
     align-items:center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+  }
+  #about h2{
+    background-color: hotpink;
+    font-family: 'Homemade Apple', cursive;
   }
   #about p { 
     font-family: 'Poppins', sans-serif;
